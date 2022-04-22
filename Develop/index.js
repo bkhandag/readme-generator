@@ -17,11 +17,6 @@ const questions = [
         message: 'What is the description of your project?', 
       },
       {
-        type: 'input',
-        name: 'tableOfContents',
-        message: 'What is the Table of Contents?',
-      },
-      {
           type: 'input',
           name: 'installationInstructions',
           message: 'What are the installation instructions',
@@ -54,8 +49,13 @@ const questions = [
         },
         {
           type: 'input',
-          name: 'questions',
-          message: 'What are your questions?',
+          name: 'githubUsername',
+          message: 'What is your Github username?',
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: 'What is your email?',
         },
   
 ];
@@ -64,7 +64,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(path.join(process.cwd(), fileName), data, function(err){
-        err ? console.error(err) : console.log('Commit logged!')});
+        err ? console.error(err) : console.log('Success!')});
 }
 
 // TODO: Create a function to initialize app
