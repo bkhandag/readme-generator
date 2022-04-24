@@ -27,7 +27,7 @@ const questions = [
           message: 'What is Usage?',
         },
         {
-          type: 'list', //TODO Change this to list
+          type: 'list',
           name: 'license',
           message: 'What License would you like to add',
           choices: [
@@ -72,14 +72,9 @@ function init() {
     inquirer
   .prompt(questions)
   .then((response) => {
-      
-
+    
     console.log("Now generating your readme.md ...");
-    writeToFile("/dist/README.md", generateMarkdown(response))
-
-
-
-
+    writeToFile("/dist/SampleREADMEwithLicense.md", generateMarkdown(response))
   });
 }
 
