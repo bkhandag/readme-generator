@@ -23,7 +23,8 @@ A readme file is generated when "node index.js" command is called in the termina
 * Repo includes a `package.json` with the required dependencies. This is done by running `npm init` when the program is first set up.
 
 ## Video:
-
+* [Readme sample with a license](https://youtu.be/dz4F4DN4E44)
+* [Readme sample without a license](https://youtu.be/C_FTOb-9_G8)
 
 ## Screenshots:
 ![Terminal Open](./Develop/Images/Terminal_open.png)
